@@ -13,6 +13,17 @@
     font-family: 'Alurabooks';
     base-palette: 0;
 }
+@font-palette-values --custom {
+    font-family: 'Alurabooks';
+    base-palette: 0;
+    override-colors:
+        0 #f00,
+        1 blue,
+        2 rgba(0, 0, 0, 0.5);
+}
+.custom {
+    font-palette: --custom;
+}
 .icon {
     /* Use !important to prevent extensions from overriding this font. */
     font-family: 'Alurabooks' !important;
