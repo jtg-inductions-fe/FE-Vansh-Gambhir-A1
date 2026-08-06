@@ -16,7 +16,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-VG-A1-00
       - name: Validate branch name
         env:
           BRANCH_NAME: ${{ github.head_ref }}

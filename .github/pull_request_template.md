@@ -1,7 +1,5 @@
 ## Description
 
-<!-- Provide a brief summary of the changes introduced by this PR. Include design goals or context. -->
-
 -
 
 ## Type of Change
@@ -27,7 +25,6 @@
 
 ## Screenshots / Design Comparisons
 
-<!-- Drag and drop screenshots showing your changes. A before/after or desktop/mobile comparison is highly recommended. -->
 
 | Viewport    | Before / Expected Design | After Changes |
 | :---------- | :----------------------- | :------------ |
