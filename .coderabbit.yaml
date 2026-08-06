@@ -73,4 +73,3 @@ reviews:
 # Disabling chat limits the AI's conversational auto-replies
 chat:
   auto_reply: false
- 
