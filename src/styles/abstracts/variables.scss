@@ -1,0 +1,19 @@
+@use 'colors';
+
+//breakpoints
+$sm: 428 px;
+$md: 1024 px;
+$lg: 1728 px;
+
+//colors
+$primary-color: linear-gradient(
+    97.54deg,
+    colors.$dark-blue 35.49%,
+    colors.$cyan-blue 165.37%
+);
+$secondary-color: colors.$orange;
+$black-text: colors.$black;
+$white-text: colors.$white;
+$text-color-light: colors.$neutral-light-gray;
+$text-color-medium: colors.$gray;
+$text-color-dark: colors.$dark-gray;
