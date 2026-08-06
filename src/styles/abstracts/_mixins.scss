@@ -1,0 +1,17 @@
+@mixin font-variant(
+    $font-weight,
+    $font-color,
+    $font-size: 16px,
+    $font-family: Poppins,
+    $gap: false
+) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $font-color;
+    line-height: 100%;
+    letter-spacing: 0%;
+    @if $gap {
+        gap: $gap;
+    }
+}
