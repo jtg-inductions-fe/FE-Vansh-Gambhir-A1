@@ -1,4 +1,4 @@
-@use 'abstracts';
+@use '../abstracts';
 h2 {
     @include abstracts.font-variant(700, abstracts.$white-text, 36px, Poppins);
 }
