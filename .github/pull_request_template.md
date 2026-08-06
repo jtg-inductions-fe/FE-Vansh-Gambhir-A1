@@ -25,7 +25,6 @@
 
 ## Screenshots / Design Comparisons
 
-
 | Viewport    | Before / Expected Design | After Changes |
 | :---------- | :----------------------- | :------------ |
 | **Desktop** |                          |               |

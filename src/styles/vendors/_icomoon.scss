@@ -1,12 +1,9 @@
 @font-face {
     font-family: 'Alurabooks';
     src:
-        url('/FE-Vansh-Gambhir-A1/src/assets/fonts/Alurabooks.woff2')
-            format('woff2'),
-        url('/FE-Vansh-Gambhir-A1/src/assets/fonts/Alurabooks.ttf')
-            format('truetype'),
-        url('/FE-Vansh-Gambhir-A1/src/assets/fonts/Alurabooks.woff')
-            format('woff');
+        url('../../assets/fonts/icomoon/Alurabooks.woff2') format('woff2'),
+        url('../../assets/fonts/icomoon/Alurabooks.ttf') format('truetype'),
+        url('../../assets/fonts/icomoon/Alurabooks.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: block;
