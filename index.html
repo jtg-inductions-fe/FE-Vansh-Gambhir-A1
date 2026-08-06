@@ -7,7 +7,59 @@
         <link rel="stylesheet" href="src/styles/main.scss" />
     </head>
     <body>
-        <div>Hello World</div>
+        <header id="header">
+            <nav class="navbar">
+                <div class="left-icons">
+                    <div
+                        class="icon icon-menu"
+                        id="hamburger"
+                        style="background-color: black"
+                    ></div>
+                    <div class="logo">
+                        <div
+                            class="icon icon-polygon1stroke"
+                            id="polygon"
+                        ></div>
+                        <h2 class="alura-heading">AluraBooks</h2>
+                    </div>
+                </div>
+                <ul id="nav-navigations">
+                    <li class="navigation-items" id="category">CATEGORIES</li>
+                    <li class="navigation-items">FAVORITES</li>
+                    <li class="navigation-items">MY BOOKSHELF</li>
+                </ul>
+                <div class="right-icons">
+                    <span class="icon icon-favourite" id="favourite"></span>
+                    <div id="bag-icon">
+                        <span class="icon icon-bag" id="bag"></span>
+                        <span id="my-bag">My bag</span>
+                    </div>
+                    <div id="profile-icon">
+                        <span class="icon icon-profile" id="profile"></span>
+                        <span id="my-profile">My Profile</span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="dialog" hidden>
+            <ul>
+                <li class="dialog-items" id="category-phone">CATEGORIES</li>
+                <li class="dialog-items">PROGRAMMING</li>
+                <li class="dialog-items">FRONT-END</li>
+                <li class="dialog-items">INFRASTRUCTURE</li>
+                <li class="dialog-items">BUSINESS</li>
+                <li class="dialog-items">DESIGN&UX</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="dialog-md-lg" hidden>
+                <li class="dialog-items-tab" id="programming">PROGRAMMING</li>
+                <li class="dialog-items-tab">FRONT-END</li>
+                <li class="dialog-items-tab">INFRASTRUCTURE</li>
+                <li class="dialog-items-tab">BUSINESS</li>
+                <li class="dialog-items-tab">DESIGN&UX</li>
+            </ul>
+        </div>
         <script type="module" src="./src/script/index.js"></script>
     </body>
 </html>

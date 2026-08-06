@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Alurabooks';
     src:
-        url('../../assets/fonts/icomoon/Alurabooks.woff2') format('woff2'),
-        url('../../assets/fonts/icomoon/Alurabooks.ttf') format('truetype'),
-        url('../../assets/fonts/icomoon/Alurabooks.woff') format('woff');
+        url('../assets/fonts/icomoon/Alurabooks.woff2') format('woff2'),
+        url('../assets/fonts/icomoon/Alurabooks.ttf') format('truetype'),
+        url('../assets/fonts/icomoon/Alurabooks.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -11,6 +11,17 @@
 @font-palette-values --palette0 {
     font-family: 'Alurabooks';
     base-palette: 0;
+}
+@font-palette-values --custom {
+    font-family: 'Alurabooks';
+    base-palette: 0;
+    override-colors:
+        0 #f00,
+        1 blue,
+        2 rgba(0, 0, 0, 0.5);
+}
+.custom {
+    font-palette: --custom;
 }
 .icon {
     font-family: 'Alurabooks' !important;
