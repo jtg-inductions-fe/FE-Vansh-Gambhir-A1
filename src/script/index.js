@@ -7,8 +7,6 @@ const dialogMobile = document.getElementsByClassName(
 hamburger.addEventListener('click', () => {
     if (dialogMobile.hasAttribute('hidden')) {
         dialogMobile.removeAttribute('hidden');
-        hamburger.style.background =
-            'linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%)';
         hamburger.style.color = 'white';
     } else {
         dialogMobile.setAttribute('hidden', 'true');
