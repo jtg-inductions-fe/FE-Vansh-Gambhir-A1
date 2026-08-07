@@ -1,0 +1,55 @@
+@use '../abstracts' as a;
+@use '../base' as *;
+.section {
+    width: 100%;
+    height: a.toRem(215);
+    top: a.toRem(78);
+    background: a.$primary-color;
+    padding: a.toRem(32) a.toRem(0);
+    opacity: 1;
+    @include a.flex_item(center, center, a.toRem(20), column);
+    @include a.mediaQuery(tablet) {
+        height: a.toRem(330);
+    }
+    &__question {
+        @extend %h2;
+        font-size: 18px;
+        @include a.mediaQuery(tablet) {
+            font-size: 36px;
+        }
+    }
+    &__answer {
+        @include a.flex_item(center, center, a.toRem(7), column);
+        @include a.mediaQuery(tablet) {
+            display: block;
+        }
+    }
+    &__answerpart {
+        @extend %p;
+    }
+    &__box {
+        width: a.toRem(380);
+        height: a.toRem(44);
+        border: 2px solid a.$white-text;
+        border-radius: a.toRem(20);
+        @include a.flex_item(center, center, a.toRem(10));
+        @include a.mediaQuery(tablet) {
+            width: a.toRem(478);
+            height: a.toRem(56);
+        }
+        @include a.mediaQuery(laptop) {
+            width: a.toRem(586);
+        }
+    }
+    &__search--search {
+        font-size: a.toRem(24);
+    }
+    &__search-text {
+        @extend %p;
+        font-size: 14px;
+        font-weight: 400;
+        @include a.mediaQuery(tablet) {
+            size: 16px;
+        }
+    }
+}
