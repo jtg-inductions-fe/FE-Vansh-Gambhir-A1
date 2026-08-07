@@ -7,59 +7,74 @@
         <link rel="stylesheet" href="src/styles/main.scss" />
     </head>
     <body>
-        <header id="header">
-            <nav class="navbar">
-                <div class="left-icons">
-                    <div
-                        class="icon icon-menu"
-                        id="hamburger"
-                        style="background-color: black"
-                    ></div>
-                    <div class="logo">
-                        <div
-                            class="icon icon-polygon1stroke"
-                            id="polygon"
-                        ></div>
-                        <h2 class="alura-heading">AluraBooks</h2>
-                    </div>
+        <nav class="navbar">
+            <div class="navbar__left">
+                <div
+                    class="icon icon-menu navbar__hamburger navbar__hamburger--open-dialog"
+                ></div>
+                <div>
+                    <img
+                        src="./src/assets/images/logonavbar.png"
+                        class="navbar__icon navbar__icon--mobile"
+                        alt="Icon"
+                    />
+                    <img
+                        src="./src/assets/images/logonavbarwithtext.png"
+                        class="navbar__icon navbar__icon--tablet"
+                        alt="Icon"
+                    />
                 </div>
-                <ul id="nav-navigations">
-                    <li class="navigation-items" id="category">CATEGORIES</li>
-                    <li class="navigation-items">FAVORITES</li>
-                    <li class="navigation-items">MY BOOKSHELF</li>
+                <ul class="navbar__navigation navbar__navigation--tablet">
+                    <li
+                        class="navbar__navigationitem navbar__item--tablet navbar__navigationitem--heading"
+                    >
+                        CATEGORIES
+                    </li>
+                    <ul class="navbar__dialog navbar__dialog--tablet" hidden>
+                        <li class="navbar__item navbar__item--tablet">
+                            Programming
+                        </li>
+                        <li class="navbar__item navbar__item--tablet">
+                            FRONT-END
+                        </li>
+                        <li class="navbar__item navbar__item--tablet">
+                            INFRASTRUCTURE
+                        </li>
+                        <li class="navbar__item navbar__item--tablet">
+                            BUSINESS
+                        </li>
+                        <li class="navbar__item navbar__item--tablet">
+                            DESIGN & UX
+                        </li>
+                    </ul>
+                    <li class="navbar__navigationitem">FAVORITES</li>
+                    <li class="navbar__navigationitem">MY BOOKSHELF</li>
                 </ul>
-                <div class="right-icons">
-                    <span class="icon icon-favourite" id="favourite"></span>
-                    <div id="bag-icon">
-                        <span class="icon icon-bag" id="bag"></span>
-                        <span id="my-bag">My bag</span>
-                    </div>
-                    <div id="profile-icon">
-                        <span class="icon icon-profile" id="profile"></span>
-                        <span id="my-profile">My Profile</span>
-                    </div>
+            </div>
+            <div class="navbar__right">
+                <div class="icon icon-heart navbar__favourite"></div>
+                <div class="navbar__bagicon">
+                    <div class="icon icon-bag navbar__bag"></div>
+                    <div class="navbar__icontext">My Bag</div>
                 </div>
-            </nav>
-        </header>
-        <div class="dialog" hidden>
-            <ul>
-                <li class="dialog-items" id="category-phone">CATEGORIES</li>
-                <li class="dialog-items">PROGRAMMING</li>
-                <li class="dialog-items">FRONT-END</li>
-                <li class="dialog-items">INFRASTRUCTURE</li>
-                <li class="dialog-items">BUSINESS</li>
-                <li class="dialog-items">DESIGN&UX</li>
-            </ul>
-        </div>
-        <div>
-            <ul class="dialog-md-lg" hidden>
-                <li class="dialog-items-tab" id="programming">PROGRAMMING</li>
-                <li class="dialog-items-tab">FRONT-END</li>
-                <li class="dialog-items-tab">INFRASTRUCTURE</li>
-                <li class="dialog-items-tab">BUSINESS</li>
-                <li class="dialog-items-tab">DESIGN&UX</li>
-            </ul>
-        </div>
+                <div class="navbar__profileicon">
+                    <div class="icon icon-profile navbar__profile"></div>
+                    <div class="navbar__icontext">My Profile</div>
+                </div>
+            </div>
+            <div class="navbar__dialog navbar__dialog--mobile">
+                <ul class="navbar__list">
+                    <li class="navbar__item navbar__item--heading">
+                        Categories
+                    </li>
+                    <li class="navbar__item">PROGRAMMING</li>
+                    <li class="navbar__item">FRONT-END</li>
+                    <li class="navbar__item">INFRASTRUCTURE</li>
+                    <li class="navbar__item">BUSINESS</li>
+                    <li class="navbar__item">DESIGN & UX</li>
+                </ul>
+            </div>
+        </nav>
         <script type="module" src="./src/script/index.js"></script>
     </body>
 </html>
