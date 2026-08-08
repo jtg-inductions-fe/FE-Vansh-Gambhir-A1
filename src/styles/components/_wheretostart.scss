@@ -52,4 +52,7 @@
             size: 16px;
         }
     }
+    &__search-text::placeholder {
+        text-align: center;
+    }
 }
