@@ -45,6 +45,7 @@
 }
 .navbar__list {
     padding: a.toRem(24);
+    z-index: 100;
 }
 
 .navbar__favourite {
@@ -61,6 +62,7 @@
 }
 
 .navbar__dialog--mobile {
+    z-index: 100;
     width: a.toRem(300);
     height: a.toRem(400);
     top: a.toRem(80);
