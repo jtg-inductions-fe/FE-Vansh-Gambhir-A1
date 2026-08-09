@@ -4,6 +4,7 @@
         <title>Title</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/styles/vendors/splide-core.min.scss" />
         <link rel="stylesheet" href="src/styles/main.scss" />
     </head>
     <body>
@@ -11,6 +12,7 @@
             <div class="navbar__left">
                 <div
                     class="icon icon-menu navbar__hamburger navbar__hamburger--open-dialog"
+                    id="hamburger"
                 ></div>
                 <div>
                     <img
@@ -27,10 +29,15 @@
                 <ul class="navbar__navigation navbar__navigation--tablet">
                     <li
                         class="navbar__navigationitem navbar__item--tablet navbar__navigationitem--heading"
+                        id="category"
                     >
                         CATEGORIES
                     </li>
-                    <ul class="navbar__dialog navbar__dialog--tablet" hidden>
+                    <ul
+                        class="navbar__dialog navbar__dialog--tablet"
+                        hidden
+                        id="dialogTab"
+                    >
                         <li class="navbar__item navbar__item--tablet">
                             Programming
                         </li>
@@ -62,7 +69,10 @@
                     <div class="navbar__icontext">My Profile</div>
                 </div>
             </div>
-            <div class="navbar__dialog navbar__dialog--mobile">
+            <div
+                class="navbar__dialog navbar__dialog--mobile"
+                id="dialog_mobile"
+            >
                 <ul class="navbar__list">
                     <li class="navbar__item navbar__item--heading">
                         Categories
@@ -93,6 +103,229 @@
                 />
             </div>
         </section>
+        <section class="latest_release">
+            <h2 class="latest_release__latest">LATEST RELEASES</h2>
+            <div class="latest_release__content">
+                <div class="latest_release__carousel_box">
+                    <section class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Acessibilidade.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/ApacheKafka.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Construct2.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Nodejs.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/MEAN.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Guia Front-end.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Javascript.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Guia Front-end.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Javascript.png"
+                                        alt=""
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="latest_release__angular_box_section">
+                    <div class="latest_release__angular_box">
+                        <div class="latest_release__text">
+                            <h2 class="latest_release__first">
+                                You might also be interested in...
+                            </h2>
+                            <h2 class="latest_release__second">
+                                Angular 11 and Firebase
+                            </h2>
+                            <p class="latest_release__third">
+                                Building an application integrated with the
+                                Google platform.
+                            </p>
+                            <div class="latest_release__icon">
+                                <span
+                                    class="icon icon-heart latest_release__favourite"
+                                ></span>
+                                <span
+                                    class="icon icon-bag latest_release__bag"
+                                ></span>
+                            </div>
+                        </div>
+                        <div class="latest_release__learn_morebox">
+                            <img
+                                src="src/assets/images/Perfil-escritora 2.png"
+                                alt="Angular Image"
+                                class="latest_release__image"
+                            />
+                            <button class="latest_release__learn_more_txt">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest_release">
+            <h2 class="latest_release__latest">BEST-SELLERS</h2>
+            <div class="latest_release__content">
+                <div class="latest_release__carousel_box">
+                    <section class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Acessibilidade.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/ApacheKafka.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Construct2.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Gestão.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Gestão2.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Guia Front-end.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Javascript.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Guia Front-end.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="splide__img"
+                                        src="src/assets/images/Javascript.png"
+                                        alt=""
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="latest_release__angular_box_section">
+                    <div class="latest_release__angular_box">
+                        <div class="latest_release__text">
+                            <h2 class="latest_release__first">
+                                *** <br />
+                                Author of the Month
+                            </h2>
+                            <h2 class="latest_release__second">
+                                Juliana Agarikov
+                            </h2>
+                            <p class="latest_release__third">
+                                A systems analyst and writer, Juliana
+                                specializes in front-end development.
+                            </p>
+                            <div class="latest_release__icon">
+                                <span
+                                    class="icon icon-heart latest_release__favourite"
+                                ></span>
+                                <span
+                                    class="icon icon-bag latest_release__bag"
+                                ></span>
+                            </div>
+                        </div>
+                        <div class="latest_release__learn_morebox">
+                            <img
+                                src="src/assets/images/Perfil-escritora 1.png"
+                                alt="Author Image"
+                                class="latest_release__image"
+                            />
+                            <button class="latest_release__learn_more_txt">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <script type="module" src="./src/script/index.js"></script>
+        <script type="module" src="./src/script/splide.js"></script>
     </body>
 </html>
