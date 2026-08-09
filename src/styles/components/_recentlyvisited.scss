@@ -1,0 +1,47 @@
+@use '../abstracts' as a;
+@use '../base' as *;
+.recently {
+    width: 100%;
+    height: a.toRem(295);
+    background: a.$primary-color;
+    padding: 10px;
+    @include a.mediaQuery(laptop) {
+        height: a.toRem(418);
+    }
+    &__heading {
+        @extend %h2;
+        font-weight: 300;
+        font-size: 16px;
+        text-align: center;
+        margin-top: a.toRem(14);
+        @include a.mediaQuery(tablet) {
+            font-size: 24px;
+        }
+        @include a.mediaQuery(laptop) {
+            font-size: 32px;
+            margin-top: a.toRem(60);
+        }
+    }
+    &__item_box {
+        @include a.flex_item(center, center, a.toRem(20));
+        margin-top: a.toRem(40);
+        flex-wrap: wrap;
+        @include a.mediaQuery(tablet) {
+            padding: a.toRem(30);
+            margin-top: a.toRem(30);
+        }
+        @include a.mediaQuery(laptop) {
+            padding: a.toRem(30) a.toRem(400);
+        }
+    }
+    &__item {
+        background-color: a.$secondary-color;
+        @extend %h2;
+        font-size: 14px;
+        padding: a.toRem(18);
+        @include a.mediaQuery(tablet) {
+            font-size: 24px;
+            padding: a.toRem(28);
+        }
+    }
+}
