@@ -1,9 +1,3 @@
-@use '../abstracts/variables' as v;
-$media: (
-    mobile: v.$sm,
-    tablet: v.$md,
-    laptop: v.$lg,
-);
 @mixin font-variant(
     $font-weight,
     $font-color,
@@ -19,21 +13,5 @@ $media: (
     letter-spacing: 0%;
     @if $gap {
         gap: $gap;
-    }
-}
-@mixin flex_item($justify-content, $align-items, $gap, $direction: row) {
-    display: flex;
-    justify-content: $justify-content;
-    align-items: $align-items;
-    gap: $gap;
-    flex-direction: $direction;
-}
-@mixin mediaQuery($breakpoint) {
-    @each $breakpoints, $size in $media {
-        @if $breakpoint==$breakpoints {
-            @media screen and (min-width: $size) {
-                @content;
-            }
-        }
     }
 }
