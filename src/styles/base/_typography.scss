@@ -1,8 +1,8 @@
 @use '../abstracts';
-h2 {
+%h2 {
     @include abstracts.font-variant(700, abstracts.$white-text, 36px, Poppins);
 }
-h3 {
+%h3 {
     @include abstracts.font-variant(
         700,
         abstracts.$secondary-color,
@@ -10,12 +10,12 @@ h3 {
         Poppins
     );
 }
-li {
+%li {
     @include abstracts.font-variant(400, abstracts.$black-text, 16px, Poppins);
 }
-p {
+%p {
     @include abstracts.font-variant(500, abstracts.$white-text, 16px, Poppins);
 }
-h4 {
+%h4 {
     @include abstracts.font-variant(400, abstracts.$white-text, 14px, Poppins);
 }

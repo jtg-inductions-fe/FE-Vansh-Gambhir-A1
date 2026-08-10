@@ -1,9 +1,10 @@
 @font-face {
     font-family: 'Alurabooks';
     src:
-        url('../../assets/fonts/icomoon/Alurabooks.woff2') format('woff2'),
-        url('../../assets/fonts/icomoon/Alurabooks.ttf') format('truetype'),
-        url('../../assets/fonts/icomoon/Alurabooks.woff') format('woff');
+        url('../../../src/assets/fonts/icomoon/Alurabooks.woff2')
+            format('woff2'),
+        url('../../../src/assets/fonts/Alurabooks.ttf') format('truetype'),
+        url('../../../src/fonts/Alurabooks.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -13,6 +14,7 @@
     base-palette: 0;
 }
 .icon {
+    /* Use !important to prevent extensions from overriding this font. */
     font-family: 'Alurabooks' !important;
     font-style: normal;
     font-weight: normal;
@@ -20,6 +22,7 @@
     text-transform: none;
     line-height: 1;
 
+    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -27,72 +30,21 @@
     font-palette: --palette0;
     color: currentColor;
 }
-.icon-profile:before {
+.icon-mail:before {
     content: '\f000';
 }
-.icon-menu:before {
+.icon-search:before {
     content: '\f001';
 }
-.icon-search:before {
+.icon-profile:before {
     content: '\f002';
 }
-.icon-mail:before {
+.icon-bag:before {
     content: '\f003';
 }
-.icon-bag:before {
+.icon-heart:before {
     content: '\f004';
 }
-.icon-alura:before {
+.icon-menu:before {
     content: '\f005';
-}
-.icon-favourite:before {
-    content: '\f006';
-}
-.icon-aluralatam:before {
-    content: '\f007';
-}
-.icon-aluralingua:before {
-    content: '\f008';
-}
-.icon-alurastart:before {
-    content: '\f009';
-}
-.icon-ellipse94:before {
-    content: '\f010';
-}
-.icon-ellipse91:before {
-    content: '\f011';
-}
-.icon-ellipse93:before {
-    content: '\f012';
-}
-.icon-ellipse92:before {
-    content: '\f013';
-}
-.icon-ellipse9:before {
-    content: '\f014';
-}
-.icon-frame24:before {
-    content: '\f015';
-}
-.icon-polygon1stroke:before {
-    content: '\f016';
-}
-.icon-caelum:before {
-    content: '\f00a';
-}
-.icon-casadocodigo:before {
-    content: '\f00b';
-}
-.icon-ellipse98:before {
-    content: '\f00c';
-}
-.icon-ellipse97:before {
-    content: '\f00d';
-}
-.icon-ellipse96:before {
-    content: '\f00e';
-}
-.icon-ellipse95:before {
-    content: '\f00f';
 }

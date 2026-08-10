@@ -7,7 +7,74 @@
         <link rel="stylesheet" href="src/styles/main.scss" />
     </head>
     <body>
-        <div>Hello World</div>
+        <nav class="navbar">
+            <div class="navbar__left">
+                <div
+                    class="icon icon-menu navbar__hamburger navbar__hamburger--open-dialog"
+                ></div>
+                <div>
+                    <img
+                        src="./src/assets/images/logonavbar.png"
+                        class="navbar__icon navbar__icon--mobile"
+                        alt="Icon"
+                    />
+                    <img
+                        src="./src/assets/images/logonavbarwithtext.png"
+                        class="navbar__icon navbar__icon--tablet"
+                        alt="Icon"
+                    />
+                </div>
+                <ul class="navbar__navigation navbar__navigation--tablet">
+                    <li
+                        class="navbar__navigationitem navbar__item--tablet navbar__navigationitem--heading"
+                    >
+                        CATEGORIES
+                    </li>
+                    <ul class="navbar__dialog navbar__dialog--tablet" hidden>
+                        <li class="navbar__item navbar__item--tablet">
+                            Programming
+                        </li>
+                        <li class="navbar__item navbar__item--tablet">
+                            FRONT-END
+                        </li>
+                        <li class="navbar__item navbar__item--tablet">
+                            INFRASTRUCTURE
+                        </li>
+                        <li class="navbar__item navbar__item--tablet">
+                            BUSINESS
+                        </li>
+                        <li class="navbar__item navbar__item--tablet">
+                            DESIGN & UX
+                        </li>
+                    </ul>
+                    <li class="navbar__navigationitem">FAVORITES</li>
+                    <li class="navbar__navigationitem">MY BOOKSHELF</li>
+                </ul>
+            </div>
+            <div class="navbar__right">
+                <div class="icon icon-heart navbar__favourite"></div>
+                <div class="navbar__bagicon">
+                    <div class="icon icon-bag navbar__bag"></div>
+                    <div class="navbar__icontext">My Bag</div>
+                </div>
+                <div class="navbar__profileicon">
+                    <div class="icon icon-profile navbar__profile"></div>
+                    <div class="navbar__icontext">My Profile</div>
+                </div>
+            </div>
+            <div class="navbar__dialog navbar__dialog--mobile">
+                <ul class="navbar__list">
+                    <li class="navbar__item navbar__item--heading">
+                        Categories
+                    </li>
+                    <li class="navbar__item">PROGRAMMING</li>
+                    <li class="navbar__item">FRONT-END</li>
+                    <li class="navbar__item">INFRASTRUCTURE</li>
+                    <li class="navbar__item">BUSINESS</li>
+                    <li class="navbar__item">DESIGN & UX</li>
+                </ul>
+            </div>
+        </nav>
         <script type="module" src="./src/script/index.js"></script>
     </body>
 </html>
