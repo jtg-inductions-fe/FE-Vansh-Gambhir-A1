@@ -3,13 +3,15 @@
 .footer {
     border-top: 1px solid a.$text-color-light;
     padding: a.toRem(15) a.toRem(20);
-    @include a.flex_item(center, flex-start, a.toRem(30));
+    @include a.flex_item(flex-start, flex-start, a.toRem(30));
     @include a.mediaQuery(tablet) {
+        justify-content: center;
         padding: a.toRem(60) a.toRem(0);
         padding-right: a.toRem(30);
         gap: a.toRem(90);
     }
     @include a.mediaQuery(laptop) {
+        justify-content: center;
         gap: a.toRem(176);
     }
     &__heading {
