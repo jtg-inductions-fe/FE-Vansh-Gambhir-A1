@@ -23,3 +23,7 @@ const categoryBtn = document.getElementById('category_button');
 lastElement.addEventListener('focusout', () => {
     categoryBtn.focus();
 });
+const lastElementMobile = document.getElementById('navbar_item_last_mobile');
+lastElementMobile.addEventListener('focusout', () => {
+    hamburger.focus();
+});
