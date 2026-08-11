@@ -105,6 +105,10 @@
     font-weight: 400;
     display: none;
 }
+.navbar__clickbg {
+    background: a.$primary-color;
+    color: a.$white-text;
+}
 
 @media screen and (width>=a.$md) {
     .navbar__icon--tablet {

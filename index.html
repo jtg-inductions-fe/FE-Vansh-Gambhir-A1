@@ -12,6 +12,7 @@
                 <button
                     class="icon icon-menu navbar__hamburger navbar__hamburger--open-dialog"
                     id="hamburger"
+                    aria-label="Toggle Navbar Dialog"
                 ></button>
                 <div>
                     <a href="/">
@@ -19,6 +20,7 @@
                             src="./src/assets/images/logonavbar.png"
                             class="navbar__icon navbar__icon--mobile"
                             alt="Icon"
+                            aria-label="Home Logo"
                         />
                         <img
                             src="./src/assets/images/logonavbarwithtext.png"
@@ -32,7 +34,7 @@
                         class="navbar__navigationitem navbar__item--tablet navbar__navigationitem--heading"
                         id="category"
                     >
-                        <button>CATEGORIES</button>
+                        <button id="category_button">CATEGORIES</button>
                     </li>
                     <ul
                         class="navbar__dialog navbar__dialog--tablet"
@@ -52,7 +54,7 @@
                             <a href="/">BUSINESS</a>
                         </li>
                         <li class="navbar__item navbar__item--tablet">
-                            <a href="/"> DESIGN & UX</a>
+                            <a id="navbar_item_last" href="/"> DESIGN & UX</a>
                         </li>
                     </ul>
                     <li class="navbar__navigationitem">
@@ -64,14 +66,25 @@
                 </ul>
             </div>
             <div class="navbar__right">
-                <div class="icon icon-heart navbar__favourite"></div>
+                <div
+                    class="icon icon-heart navbar__favourite"
+                    aria-label="Favorites"
+                ></div>
                 <div class="navbar__bagicon">
-                    <button class="icon icon-bag navbar__bag"></button>
-                    <div class="navbar__icontext">My Bag</div>
+                    <button
+                        class="icon icon-bag navbar__bag"
+                        aria-labelledby="bagicontext"
+                    ></button>
+                    <div id="bagicontext" class="navbar__icontext">My Bag</div>
                 </div>
                 <div class="navbar__profileicon">
-                    <button class="icon icon-profile navbar__profile"></button>
-                    <div class="navbar__icontext">My Profile</div>
+                    <button
+                        class="icon icon-profile navbar__profile"
+                        aria-labelledby="profileicontext"
+                    ></button>
+                    <div class="navbar__icontext" id="profileicontext">
+                        My Profile
+                    </div>
                 </div>
             </div>
             <div
@@ -105,8 +118,12 @@
                 </span>
             </p>
             <div class="section__box">
-                <span class="icon icon-search section__search--search"></span>
+                <span
+                    class="icon icon-search section__search--search"
+                    aria-labelledby="search_text"
+                ></span>
                 <input
+                    id="search_text"
                     placeholder="What will your next read be?"
                     class="section__search-text"
                 />
@@ -202,9 +219,11 @@
                             <div class="latest_release__icon">
                                 <button
                                     class="icon icon-heart latest_release__favourite"
+                                    aria-label="Favorites"
                                 ></button>
                                 <button
                                     class="icon icon-bag latest_release__bag"
+                                    aria-label="My Cart"
                                 ></button>
                             </div>
                         </div>
@@ -333,9 +352,11 @@
                             <div class="latest_release__icon">
                                 <button
                                     class="icon icon-heart latest_release__favourite"
+                                    aria-label="Favorites"
                                 ></button>
                                 <button
                                     class="icon icon-bag latest_release__bag"
+                                    aria-label="latest_release"
                                 ></button>
                             </div>
                         </div>
@@ -378,10 +399,14 @@
                 </p>
             </div>
             <div class="newsletter__box">
-                <span class="icon icon-mail newsletter__mail--mail"></span>
+                <span
+                    class="icon icon-mail newsletter__mail--mail"
+                    aria-labelledby="mail-text"
+                ></span>
                 <input
                     placeholder="Sign up with your email"
                     class="newsletter__mail--text"
+                    id="mail-text"
                 />
             </div>
         </section>
@@ -391,14 +416,23 @@
                 <h3 class="footer__item_heading">Education</h3>
                 <ul class="footer__item_row">
                     <li class="footer__item_logotextbox">
-                        <img src="src/assets/images/Caelum.png" alt="Logo" />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/Caelum.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Caelum</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img
-                            src="src/assets/images/CasaDoCodigo.png"
-                            alt="Logo"
-                        />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/CasaDoCodigo.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Casa do Código</p>
                     </li>
                 </ul>
@@ -407,43 +441,73 @@
                 <h3 class="footer__item_heading">Online Education</h3>
                 <ul class="footer__item_row">
                     <li class="footer__item_logotextbox">
-                        <img src="src/assets/images/Alura.png" alt="Logo" />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/Alura.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Alura</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img
-                            src="src/assets/images/AluraEmpresas.png"
-                            alt="Logo"
-                        />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/AluraEmpresas.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Alura Para Empresas</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img
-                            src="src/assets/images/AluraLatam.png"
-                            alt="Logo"
-                        />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/AluraLatam.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Alura LATAM</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img
-                            src="src/assets/images/AluraStart.png"
-                            alt="Logo"
-                        />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/AluraStart.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Alura Start</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img src="src/assets/images/MusicDot.png" alt="Logo" />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/MusicDot.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>MusicDot</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img
-                            src="src/assets/images/AluraLingua.png"
-                            alt="Logo"
-                        />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/AluraLingua.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Alura Língua</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img src="src/assets/images/PM3.png" alt="Logo" />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/PM3.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>PM3</p>
                     </li>
                 </ul>
@@ -452,43 +516,73 @@
                 <h3 class="footer__item_heading">Community</h3>
                 <ul class="footer__item_row">
                     <li class="footer__item_logotextbox">
-                        <img
-                            src="src/assets/images/HipstersTech.png"
-                            alt="Logo"
-                        />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/HipstersTech.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Hipsters ponto Tech</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img src="src/assets/images/ScubaDev.png" alt="Logo" />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/ScubaDev.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Scuba Dev</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img
-                            src="src/assets/images/LayersTech.png"
-                            alt="Logo"
-                        />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/LayersTech.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Layers ponto Tech</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img src="src/assets/images/LikeABoss.png" alt="Logo" />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/LikeABoss.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Like a Boss</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img
-                            src="src/assets/images/CarreiraSemFronteira.png"
-                            alt="Logo"
-                        />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/CarreiraSemFronteira.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Carreira sem Fronteira</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img
-                            src="src/assets/images/HipstersJobs.png"
-                            alt="Logo"
-                        />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/HipstersJobs.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>Hipsters ponto Jobs</p>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <img src="src/assets/images/GUJ.png" alt="Logo" />
+                        <a href="/">
+                            <img
+                                src="src/assets/images/GUJ.png"
+                                alt="Logo"
+                                aria-hidden="true"
+                            />
+                        </a>
                         <p>GUJ</p>
                     </li>
                 </ul>
