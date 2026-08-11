@@ -59,7 +59,7 @@
         }
     }
     &__text {
-        @include a.flex_item(center, center, a.toRem(15), column);
+        @include a.flex_item(center, flex-start, a.toRem(15), column);
         @include a.mediaQuery(tablet) {
             @include a.flex_item(center, flex-start, a.toRem(25), column);
         }
