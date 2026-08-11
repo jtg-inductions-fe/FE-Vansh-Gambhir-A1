@@ -10,6 +10,7 @@ for (let i = 0; i < elems.length; i++) {
         autoWidth: true,
         gap: '50px',
         mediaQuery: 'min',
+        paginationKeyboard: true,
         breakpoints: {
             1024: {
                 width: '80%',
