@@ -5,6 +5,7 @@
     height: a.toRem(295);
     background: a.$primary-color;
     padding: 10px;
+    overflow: hidden;
     @include a.mediaQuery(tablet) {
         height: a.toRem(330);
     }

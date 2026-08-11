@@ -7,6 +7,7 @@
     background: a.$primary-color;
     padding: a.toRem(32) a.toRem(0);
     opacity: 1;
+    overflow: hidden;
     @include a.flex_item(center, center, a.toRem(20), column);
     @include a.mediaQuery(tablet) {
         height: a.toRem(330);
@@ -14,6 +15,15 @@
     &__question {
         @extend %h2;
         font-size: 18px;
+        max-width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
         @include a.mediaQuery(tablet) {
             font-size: 36px;
         }
@@ -25,6 +35,15 @@
         }
     }
     &__answerpart {
+        max-width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
         @extend %p;
     }
     &__box {
