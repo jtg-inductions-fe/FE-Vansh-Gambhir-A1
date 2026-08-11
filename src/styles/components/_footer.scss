@@ -1,0 +1,64 @@
+@use '../abstracts' as a;
+@use '../base' as *;
+.footer {
+    border-top: 1px solid a.$text-color-light;
+    padding: a.toRem(15) a.toRem(20);
+    @include a.flex_item(flex-start, flex-start, a.toRem(30));
+    @include a.mediaQuery(tablet) {
+        justify-content: center;
+        padding: a.toRem(60) a.toRem(0);
+        padding-right: a.toRem(30);
+        gap: a.toRem(90);
+    }
+    @include a.mediaQuery(laptop) {
+        justify-content: center;
+        gap: a.toRem(176);
+    }
+    &__heading {
+        @extend %h2;
+        color: a.$black-text;
+        font-size: 16px;
+        font-weight: 400;
+        @include a.mediaQuery(tablet) {
+            font-size: 24px;
+        }
+    }
+    @include a.mediaQuery(tablet) {
+        font-size: 24px;
+        margin-top: a.toRem(20);
+    }
+    &__item_box {
+        display: none;
+        @include a.mediaQuery(tablet) {
+            @include a.flex_item(center, flex-start, a.toRem(30), column);
+        }
+        @include a.mediaQuery(laptop) {
+            border-left: 1px solid a.$text-color-medium;
+            padding-left: a.toRem(20);
+        }
+    }
+    &__item_heading {
+        @extend %h3;
+        color: a.$text-color-medium;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    &__item_logotextbox {
+        @include a.flex_item(flex-start, center, a.toRem(8));
+        width: a.toRem(190);
+    }
+    &__item_logotextbox > p {
+        @extend %p;
+        color: a.$text-color-dark;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__item_row {
+        @include a.flex_item(center, center, a.toRem(16), column);
+        @include a.mediaQuery(laptop) {
+            height: a.toRem(387);
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+}
