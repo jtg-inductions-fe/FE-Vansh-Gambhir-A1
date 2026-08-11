@@ -1,20 +1,17 @@
 @use '../abstracts' as a;
 @use '../base' as *;
 .latest_release {
-    height: a.toRem(880);
-    padding: a.toRem(20) a.toRem(0);
+    padding: a.toRem(15) a.toRem(0);
     opacity: 1;
     @include a.mediaQuery(tablet) {
-        padding: a.toRem(50) a.toRem(0);
-    }
-    @include a.mediaQuery(laptop) {
-        height: a.toRem(550);
+        padding: a.toRem(0) a.toRem(0);
     }
     &__latest {
         @extend %h2;
         text-align: center;
         color: a.$secondary-color;
         font-size: 18px;
+        padding: a.toRem(60);
         @include a.mediaQuery(tablet) {
             font-size: 26px;
         }
@@ -66,6 +63,7 @@
     }
     &__content {
         @include a.mediaQuery('laptop') {
+            height: a.toRem(450);
             @include a.flex_item(center, center, a.toRem(0));
             background-color: a.$text-color-light;
         }
@@ -111,7 +109,7 @@
     }
 }
 .splide {
-    margin-top: a.toRem(70);
+    margin-top: a.toRem(16);
     background-color: a.$text-color-light;
     padding: a.toRem(50) a.toRem(0);
     &__slide {
