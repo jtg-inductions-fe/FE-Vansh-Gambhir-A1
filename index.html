@@ -9,28 +9,30 @@
     <body>
         <nav class="navbar">
             <div class="navbar__left">
-                <div
+                <button
                     class="icon icon-menu navbar__hamburger navbar__hamburger--open-dialog"
                     id="hamburger"
-                ></div>
+                ></button>
                 <div>
-                    <img
-                        src="./src/assets/images/logonavbar.png"
-                        class="navbar__icon navbar__icon--mobile"
-                        alt="Icon"
-                    />
-                    <img
-                        src="./src/assets/images/logonavbarwithtext.png"
-                        class="navbar__icon navbar__icon--tablet"
-                        alt="Icon"
-                    />
+                    <a href="/">
+                        <img
+                            src="./src/assets/images/logonavbar.png"
+                            class="navbar__icon navbar__icon--mobile"
+                            alt="Icon"
+                        />
+                        <img
+                            src="./src/assets/images/logonavbarwithtext.png"
+                            class="navbar__icon navbar__icon--tablet"
+                            alt="Icon"
+                        />
+                    </a>
                 </div>
                 <ul class="navbar__navigation navbar__navigation--tablet">
                     <li
                         class="navbar__navigationitem navbar__item--tablet navbar__navigationitem--heading"
                         id="category"
                     >
-                        CATEGORIES
+                        <button>CATEGORIES</button>
                     </li>
                     <ul
                         class="navbar__dialog navbar__dialog--tablet"
@@ -38,49 +40,56 @@
                         id="dialogTab"
                     >
                         <li class="navbar__item navbar__item--tablet">
-                            Programming
+                            <a href="/">Programming</a>
                         </li>
                         <li class="navbar__item navbar__item--tablet">
-                            FRONT-END
+                            <a href="/">FRONT-END</a>
                         </li>
                         <li class="navbar__item navbar__item--tablet">
-                            INFRASTRUCTURE
+                            <a href="/">INFRASTRUCTURE</a>
                         </li>
                         <li class="navbar__item navbar__item--tablet">
-                            BUSINESS
+                            <a href="/">BUSINESS</a>
                         </li>
                         <li class="navbar__item navbar__item--tablet">
-                            DESIGN & UX
+                            <a href="/"> DESIGN & UX</a>
                         </li>
                     </ul>
-                    <li class="navbar__navigationitem">FAVORITES</li>
-                    <li class="navbar__navigationitem">MY BOOKSHELF</li>
+                    <li class="navbar__navigationitem">
+                        <a href="/">FAVORITES</a>
+                    </li>
+                    <li class="navbar__navigationitem">
+                        <a href="/">MY BOOKSHELF </a>
+                    </li>
                 </ul>
             </div>
             <div class="navbar__right">
                 <div class="icon icon-heart navbar__favourite"></div>
                 <div class="navbar__bagicon">
-                    <div class="icon icon-bag navbar__bag"></div>
+                    <button class="icon icon-bag navbar__bag"></button>
                     <div class="navbar__icontext">My Bag</div>
                 </div>
                 <div class="navbar__profileicon">
-                    <div class="icon icon-profile navbar__profile"></div>
+                    <button class="icon icon-profile navbar__profile"></button>
                     <div class="navbar__icontext">My Profile</div>
                 </div>
             </div>
             <div
                 class="navbar__dialog navbar__dialog--mobile"
+                hidden
                 id="dialog_mobile"
             >
                 <ul class="navbar__list">
                     <li class="navbar__item navbar__item--heading">
-                        Categories
+                        <button>Categories</button>
                     </li>
-                    <li class="navbar__item">PROGRAMMING</li>
-                    <li class="navbar__item">FRONT-END</li>
-                    <li class="navbar__item">INFRASTRUCTURE</li>
-                    <li class="navbar__item">BUSINESS</li>
-                    <li class="navbar__item">DESIGN & UX</li>
+                    <li class="navbar__item"><a href="/"> PROGRAMMING </a></li>
+                    <li class="navbar__item"><a href="/"> FRONT-END </a></li>
+                    <li class="navbar__item">
+                        <a href="/"> INFRASTRUCTURE </a>
+                    </li>
+                    <li class="navbar__item"><a href="/"> BUSINESS </a></li>
+                    <li class="navbar__item"><a href="/">DESIGN & UX </a></li>
                 </ul>
             </div>
         </nav>
@@ -190,12 +199,12 @@
                                 Google platform.
                             </p>
                             <div class="latest_release__icon">
-                                <span
+                                <button
                                     class="icon icon-heart latest_release__favourite"
-                                ></span>
-                                <span
+                                ></button>
+                                <button
                                     class="icon icon-bag latest_release__bag"
-                                ></span>
+                                ></button>
                             </div>
                         </div>
                         <div class="latest_release__learn_morebox">
@@ -302,12 +311,12 @@
                                 specializes in front-end development.
                             </p>
                             <div class="latest_release__icon">
-                                <span
+                                <button
                                     class="icon icon-heart latest_release__favourite"
-                                ></span>
-                                <span
+                                ></button>
+                                <button
                                     class="icon icon-bag latest_release__bag"
-                                ></span>
+                                ></button>
                             </div>
                         </div>
                         <div class="latest_release__learn_morebox">
