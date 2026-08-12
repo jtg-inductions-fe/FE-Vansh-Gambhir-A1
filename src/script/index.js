@@ -1,10 +1,12 @@
 const hamburger = document.getElementById('hamburger');
 const dialogMobile = document.getElementById('dialog_mobile');
 hamburger.addEventListener('click', () => {
-    if (dialogMobile.hasAttribute('hidden')) {
-        dialogMobile.removeAttribute('hidden');
+    if (dialogMobile.classList.contains('fade_hidden')) {
+        dialogMobile.classList.remove('fade_hidden');
+        dialogMobile.classList.add('fade');
     } else {
-        dialogMobile.setAttribute('hidden', 'true');
+        dialogMobile.classList.add('fade_hidden');
+        dialogMobile.classList.remove('fade');
     }
 });
 const category = document.getElementById('category');

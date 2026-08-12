@@ -109,6 +109,21 @@
     background: a.$primary-color;
     color: a.$white-text;
 }
+.fade {
+    opacity: 1;
+    visibility: visible;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.fade_hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+}
 
 @media screen and (width>=a.$md) {
     .navbar__icon--tablet {

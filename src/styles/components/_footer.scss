@@ -47,7 +47,7 @@
         @include a.flex_item(flex-start, center, a.toRem(8));
         width: a.toRem(190);
     }
-    &__item_logotextbox > p {
+    &__item_logotextbox > a {
         @extend %p;
         color: a.$text-color-dark;
         font-size: 14px;

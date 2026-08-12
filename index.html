@@ -5,6 +5,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="src/styles/main.scss" />
+        <link
+            rel="preload"
+            href="./src/assets/fonts/poppins-v24-latin-300.woff2"
+            as="font"
+            type="font/woff2"
+        />
+        <link
+            rel="preload"
+            href="./src/assets/fonts/poppins-v24-latin-500.woff2"
+            as="font"
+            type="font/woff2"
+        />
+        <link
+            rel="preload"
+            href="./src/assets/fonts/poppins-v24-latin-700.woff2"
+            as="font"
+            type="font/woff2"
+        />
+        <link
+            rel="preload"
+            href="./src/assets/fonts/poppins-v24-latin-regular.woff2"
+            as="font"
+            type="font/woff2"
+        />
+        <link
+            rel="preload"
+            href="./src/assets/fonts/icomoon/Alurabooks.woff2"
+            as="font"
+            type="font/woff2"
+        />
     </head>
     <body>
         <nav class="navbar">
@@ -88,8 +118,7 @@
                 </div>
             </div>
             <div
-                class="navbar__dialog navbar__dialog--mobile"
-                hidden
+                class="navbar__dialog navbar__dialog--mobile fade_hidden"
                 id="dialog_mobile"
             >
                 <ul class="navbar__list">
@@ -251,63 +280,72 @@
                                         <img
                                             class="splide__img"
                                             src="src/assets/images/Acessibilidade.png"
-                                            alt=""
+                                            alt="Book Image"
+                                            loading="lazy"
                                         />
                                     </li>
                                     <li class="splide__slide">
                                         <img
                                             class="splide__img"
                                             src="src/assets/images/ApacheKafka.png"
-                                            alt=""
+                                            alt="Book Image"
+                                            loading="lazy"
                                         />
                                     </li>
                                     <li class="splide__slide">
                                         <img
                                             class="splide__img"
                                             src="src/assets/images/Construct2.png"
-                                            alt=""
+                                            alt="Book Image"
+                                            loading="lazy"
                                         />
                                     </li>
                                     <li class="splide__slide">
                                         <img
                                             class="splide__img"
                                             src="src/assets/images/Gestão.png"
-                                            alt=""
+                                            alt="Book Image"
+                                            loading="lazy"
                                         />
                                     </li>
                                     <li class="splide__slide">
                                         <img
                                             class="splide__img"
                                             src="src/assets/images/Gestão2.png"
-                                            alt=""
+                                            alt="Book Image"
+                                            loading="lazy"
                                         />
                                     </li>
                                     <li class="splide__slide">
                                         <img
                                             class="splide__img"
                                             src="src/assets/images/Guia Front-end.png"
-                                            alt=""
+                                            alt="Book Image"
+                                            loading="lazy"
                                         />
                                     </li>
                                     <li class="splide__slide">
                                         <img
                                             class="splide__img"
                                             src="src/assets/images/Javascript.png"
-                                            alt=""
+                                            alt="Book Image"
+                                            loading="lazy"
                                         />
                                     </li>
                                     <li class="splide__slide">
                                         <img
                                             class="splide__img"
                                             src="src/assets/images/Guia Front-end.png"
-                                            alt=""
+                                            alt="Book Image"
+                                            loading="lazy"
                                         />
                                     </li>
                                     <li class="splide__slide">
                                         <img
                                             class="splide__img"
                                             src="src/assets/images/Javascript.png"
-                                            alt=""
+                                            alt="Book Image"
+                                            loading="lazy"
                                         />
                                     </li>
                                 </ul>
@@ -320,23 +358,23 @@
                                 <h2 class="latest_release__first">
                                     <img
                                         src="./src/assets/images/Star 3.png"
-                                        alt=""
+                                        alt="*"
                                     />
                                     <img
                                         src="./src/assets/images/Star 3.png"
-                                        alt=""
+                                        alt="*"
                                     />
                                     <img
                                         src="./src/assets/images/Star 3.png"
-                                        alt=""
+                                        alt="*"
                                     />
                                     <img
                                         src="./src/assets/images/Star 3.png"
-                                        alt=""
+                                        alt="*"
                                     />
                                     <img
                                         src="./src/assets/images/Star 3.png"
-                                        alt=""
+                                        alt="*"
                                     />
                                     <br />
                                     Author of the Month
@@ -364,6 +402,7 @@
                                     src="src/assets/images/Perfil-escritora 1.png"
                                     alt="Author Image"
                                     class="latest_release__image"
+                                    loading="lazy"
                                 />
                                 <button class="latest_release__learn_more_txt">
                                     Learn more
@@ -416,24 +455,20 @@
                 <h3 class="footer__item_heading">Education</h3>
                 <ul class="footer__item_row">
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/Caelum.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Caelum</p>
+                        <img
+                            src="src/assets/images/Caelum.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Caelum</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/CasaDoCodigo.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Casa do Código</p>
+                        <img
+                            src="src/assets/images/CasaDoCodigo.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Casa do Código</a>
                     </li>
                 </ul>
             </div>
@@ -441,74 +476,60 @@
                 <h3 class="footer__item_heading">Online Education</h3>
                 <ul class="footer__item_row">
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/Alura.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Alura</p>
+                        <img
+                            src="src/assets/images/Alura.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Alura</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/AluraEmpresas.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Alura Para Empresas</p>
+                        <img
+                            src="src/assets/images/AluraEmpresas.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Alura Para Empresas</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/AluraLatam.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Alura LATAM</p>
+                        <img
+                            src="src/assets/images/AluraLatam.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Alura LATAM</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/AluraStart.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Alura Start</p>
+                        <img
+                            src="src/assets/images/AluraStart.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Alura Start</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/MusicDot.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>MusicDot</p>
+                        <img
+                            src="src/assets/images/MusicDot.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">MusicDot</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/AluraLingua.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Alura Língua</p>
+                        <img
+                            src="src/assets/images/AluraLingua.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Alura Língua</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/PM3.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>PM3</p>
+                        <img
+                            src="src/assets/images/PM3.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">PM3</a>
                     </li>
                 </ul>
             </div>
@@ -516,74 +537,60 @@
                 <h3 class="footer__item_heading">Community</h3>
                 <ul class="footer__item_row">
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/HipstersTech.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Hipsters ponto Tech</p>
+                        <img
+                            src="src/assets/images/HipstersTech.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Hipsters ponto Tech</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/ScubaDev.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Scuba Dev</p>
+                        <img
+                            src="src/assets/images/ScubaDev.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Scuba Dev</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/LayersTech.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Layers ponto Tech</p>
+                        <img
+                            src="src/assets/images/LayersTech.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Layers ponto Tech</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/LikeABoss.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Like a Boss</p>
+                        <img
+                            src="src/assets/images/LikeABoss.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Like a Boss</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/CarreiraSemFronteira.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Carreira sem Fronteira</p>
+                        <img
+                            src="src/assets/images/CarreiraSemFronteira.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Carreira sem Fronteira</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/HipstersJobs.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>Hipsters ponto Jobs</p>
+                        <img
+                            src="src/assets/images/HipstersJobs.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">Hipsters ponto Jobs</a>
                     </li>
                     <li class="footer__item_logotextbox">
-                        <a href="/">
-                            <img
-                                src="src/assets/images/GUJ.png"
-                                alt="Logo"
-                                aria-hidden="true"
-                            />
-                        </a>
-                        <p>GUJ</p>
+                        <img
+                            src="src/assets/images/GUJ.png"
+                            alt="Logo"
+                            aria-hidden="true"
+                        />
+                        <a href="/">GUJ</a>
                     </li>
                 </ul>
             </div>
