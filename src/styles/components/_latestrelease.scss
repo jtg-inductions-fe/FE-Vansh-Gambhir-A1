@@ -12,9 +12,9 @@
         text-align: center;
         color: a.$secondary-color;
         font-size: 18px;
-        padding: a.toRem(60);
         @include a.mediaQuery(tablet) {
             font-size: 26px;
+            padding: a.toRem(60);
         }
         @include a.mediaQuery(laptop) {
             font-size: 32px;
@@ -37,6 +37,7 @@
     &__first {
         @extend %h2;
         display: -webkit-box;
+        max-width: 80%;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
@@ -55,6 +56,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
+        max-width: 80%;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
@@ -68,6 +70,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        max-width: 80%;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
@@ -110,6 +113,7 @@
     }
     &__learn_more_txt {
         display: -webkit-box;
+        max-width: 80%;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;

@@ -15,7 +15,7 @@
     &__question {
         @extend %h2;
         font-size: 18px;
-        max-width: 100%;
+        max-width: 80%;
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
@@ -29,13 +29,20 @@
         }
     }
     &__answer {
-        @include a.flex_item(center, center, a.toRem(7), column);
+        @extend %p;
+        text-align: center;
+        max-width: 80%;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
         @include a.mediaQuery(tablet) {
             display: block;
         }
-    }
-    &__answerpart {
-        @extend %p;
     }
     &__box {
         width: a.toRem(380);

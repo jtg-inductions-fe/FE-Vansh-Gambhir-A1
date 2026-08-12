@@ -1,16 +1,9 @@
 select:focus-visible {
-    border: 2px dashed crimson;
-    border-radius: 3px;
-    outline: none;
+    outline-style: solid;
 }
 a:focus-visible {
-    border: 2px dashed crimson;
-    border-radius: 3px;
-    outline: none;
+    outline-style: solid;
 }
 button:focus-visible {
-    border: 2px dashed crimson;
-    border-radius: 3px;
-    outline: none;
-    padding: 2px;
+    outline-style: solid;
 }
