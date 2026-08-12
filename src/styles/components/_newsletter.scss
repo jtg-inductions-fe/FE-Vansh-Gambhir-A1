@@ -1,0 +1,70 @@
+@use '../abstracts' as a;
+@use '../base' as b;
+.newsletter {
+    padding: a.toRem(30);
+    @include a.flex_item(center, center, a.toRem(15), column);
+    @include a.mediaQuery(tablet) {
+        @include a.flex_item(center, center, a.toRem(0));
+        padding: a.toRem(40) a.toRem(150);
+    }
+    @include a.mediaQuery(laptop) {
+        gap: a.toRem(50);
+        padding: a.toRem(65) a.toRem(450);
+    }
+    &__heading {
+        @extend %h2;
+        font-weight: 500;
+        font-size: 18px;
+        color: a.$text-color-1;
+        text-align: center;
+        @include a.mediaQuery(tablet) {
+            font-size: 24px;
+            text-align: left;
+        }
+    }
+    &__paragraph {
+        @extend %p;
+        color: a.$text-color-1;
+        font-weight: 300;
+        margin-top: a.toRem(20);
+        @include a.mediaQuery(tablet) {
+            margin-top: a.toRem(28);
+        }
+        @include a.mediaQuery(laptop) {
+            letter-spacing: 1px;
+        }
+    }
+    &__box {
+        margin-top: a.toRem(20);
+        width: a.toRem(380);
+        height: a.toRem(44);
+        border: 2px solid a.$text-color-1;
+        border-radius: a.toRem(20);
+        padding: a.toRem(20);
+        @include a.flex_item(flex-start, center, a.toRem(10));
+        @include a.mediaQuery(tablet) {
+            margin-top: a.toRem(0);
+            width: a.toRem(326);
+            height: a.toRem(56);
+        }
+        @include a.mediaQuery(laptop) {
+            width: a.toRem(349);
+            height: a.toRem(44);
+        }
+    }
+    &__mail--mail {
+        font-size: a.toRem(24);
+    }
+    &__mail--mail::before {
+        color: a.$text-color-1;
+    }
+    &__mail--text {
+        @extend %p;
+        color: a.$text-color-1;
+        font-size: 16px;
+        font-weight: 400;
+        @include a.mediaQuery(tablet) {
+            size: 16px;
+        }
+    }
+}
